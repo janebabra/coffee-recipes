@@ -1,74 +1,4309 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="en" manifest="cache.manifest">
+<head> 
+	<title>Espresso | Cocktails | Drinks</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Coffee-recipes : HTML5 Mobile Web App for Coffee Cocktails and Coffee Drinks" />
+	
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Coffee-recipes</title>
-  </head>
+	<link rel="stylesheet" href="themes/my-custom-theme.css.min.css" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <body>
+<script type="text/javascript">
+    $(document).bind("mobileinit", function(){
+        $.mobile.page.prototype.options.addBackBtn= true;
+    });
+</script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/janebabra/coffee-recipes">View on GitHub</a>
 
-          <h1 id="project_title">Coffee-recipes</h1>
-          <h2 id="project_tagline">HTML5 Mobile Web App for Coffee Cocktails and Coffee Drinks</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/janebabra/coffee-recipes/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/janebabra/coffee-recipes/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<script type="text/javascript" src="http://ad.leadboltmobile.net/show_app_ad.js?section_id=327007875"></script>
+	<link rel="apple-touch-icon-precomposed" href="icon.jpg"/>
+  	<link rel="apple-touch-icon" href="icon.png"/>
+	<link rel="apple-touch-startup-image" href="startup.png" />  
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad2.png">
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>Designer Templates</h3>
+	
+<style>	
+		.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 35px !important; }
+		.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		#home .ui-icon { background:  url(glyphish-icons/53-house.png) 50% 50% no-repeat; background-size: 24px 22px; }
+		#history .ui-icon { background:  url(glyphish-icons/190-bank.png) 50% 50% no-repeat; background-size: 24px 16px;  }
+		#coffee .ui-icon { background:  url(glyphish-icons/34-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+		#tips .ui-icon { background:  url(glyphish-icons/179-notepad.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+		#stuff .ui-icon { background:  url(glyphish-icons/102-walk.png) 50% 50% no-repeat;  background-size: 22px 24px; }
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+h3 {
+        text-align: center;
+    }
 
-<h3>Rather Drive Stick?</h3>
+.ui-page {
+		margin-top: 50px
+	}
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+.ui-block-a#pic {
+	background-color:#000000;
+}
 
-<h3>Authors and Contributors</h3>
+	</style>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+</head> 
+<body> 
 
-<h3>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Coffee-recipes maintained by <a href="https://github.com/janebabra">janebabra</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<div data-role="page" id="menu" data-add-back-btn="true" data-theme="a">
 
-    
+	<div data-role="header" data-theme="a">
+		<h1>Coffee Recipes</h1>
+	</div><!-- /header -->
 
-  </body>
+	<div data-role="content" data-theme="a">	
+		<ul data-role="listview" data-theme="b" data-inset="true" data-filter="true" data-filter-theme="a" data-autodividers="true" data-divider-theme="a">
+	<li><a href="#page1" data-transition="slide">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Advocaat Espresso</a></li>
+	<li><a href="#page2" data-transition="slide">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Almonds Dates Smoothie</a></li>	
+	<li><a href="#page3" data-transition="slide">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Amaretto Coffee</a></li>
+	<li><a href="#page4" data-transition="slide">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Amarillo Coffee</a></li>
+	<li><a href="#page5">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Banana Flip</a></li>
+	<li><a href="#page6">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Banana Liqueur Cocktail</a></li>
+	<li><a href="#page7">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Black Eye</a></li>
+	<li><a href="#page8">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Breve</a></li>
+	<li><a href="#page9">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Affogato</a></li>
+	<li><a href="#page10">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Americano</a></li>
+	<li><a href="#page11">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Con Hielo</a></li>
+	<li><a href="#page12">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Con Panna</a></li>
+	<li><a href="#page13">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Cortado</a></li>
+	<li><a href="#page14">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Creme</a></li>
+	<li><a href="#page15">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Latte</a></li>
+	<li><a href="#page16">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Macchiato</a></li>
+	<li><a href="#page17">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Café Noisette</a></li>
+	<li><a href="#page18">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Campari Coffee</a></li>
+	<li><a href="#page19">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Cappuccino</a></li>
+	<li><a href="#page20">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Caribbean Coffee</a></li>
+	<li><a href="#page21">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Cherry Lady Cocktail</a></li>
+	<li><a href="#page22">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Choco Espresso Cocktail</a></li>
+	<li><a href="#page23">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Cinnamon Vanilla Coffee</a></li>
+	<li><a href="#page24">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Coconut Smoothie</a></li>
+	<li><a href="#page25">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Coffee Cocktail With Grappa</a></li>
+	<li><a href="#page26">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Coffee La Bamba</a></li>
+	<li><a href="#page27">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Coffee Moretto</a></li>	
+	<li><a href="#page28">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Coffee Orangiata</a></li>
+	<li><a href="#page29">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Coffee Rose</a></li>
+	<li><a href="#page30">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Coffee Veluto</a></li>
+	<li><a href="#page31">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Coffee White Lady</a></li>
+	<li><a href="#page32">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Coffee Winter Magic</a></li>
+	<li><a href="#page33">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Cold Caribbean Cocktail</a></li>
+	<li><a href="#page34">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Dead Eye</a></li>
+	<li><a href="#page35">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Dry Cappuccino</a></li>
+	<li><a href="#page36">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Easy Iced Coffee</a></li>
+	<li><a href="#page37">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso</a></li>
+	<li><a href="#page38">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Bon Bon</a></li>
+	<li><a href="#page39">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Coretto</a></li>
+	<li><a href="#page40">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Doppio</a></li>
+	<li><a href="#page41">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Lungo</a></li>
+	<li><a href="#page42">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Macchiato</a></li>
+	<li><a href="#page43">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Ristretto</a></li>
+	<li><a href="#page44">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Romano</a></li>
+	<li><a href="#page45">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Espresso Viennese</a></li>
+	<li><a href="#page46">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Flat White</a></li>
+	<li><a href="#page47">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Floridas Night Coffee</a></li>
+	<li><a href="#page48">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Fresh Presso</a></li>
+	<li><a href="#page49">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">French Coffee</a></li>
+	<li><a href="#page50">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Ginger Coffee</a></li>
+	<li><a href="#page51">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Gingerbread Latte</a></li>
+	<li><a href="#page52">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Golden Eye</a></li>
+	<li><a href="#page53">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Hazelnut Coffee</a></li>
+	<li><a href="#page54">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Hard Coffee Soda</a></li>
+	<li><a href="#page55">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Hot Russian Coffee</a></li>
+	<li><a href="#page56">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Iced Chocolate Coffee</a></li>
+	<li><a href="#page57">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Iced Irish Cream Coffee</a></li>
+	<li><a href="#page58">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Iced Lemon Espresso</a></li>
+	<li><a href="#page59">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Iced Mochaccino</a></li>
+	<li><a href="#page60">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Iced Mochas</a></li>
+	<li><a href="#page61">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Iced Vanilla Cream Coffee</a></li>
+	<li><a href="#page62">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Indian Coffee</a></li>
+	<li><a href="#page63">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Irish Coffee</a></li>
+	<li><a href="#page64">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Irish Latte</a></li>
+	<li><a href="#page65">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Jamaica Coffee</a></li>
+	<li><a href="#page66">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Latte Macchiato</a></li>
+	<li><a href="#page67">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Long Black</a></li>
+	<li><a href="#page68">
+	<img src="glyphish-icons/144-martini.png" class="ui-li-icon">Long Night Coffee</a></li>
+	<li><a href="#page69">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Maracuya Coffee</a></li>
+	<li><a href="#page70">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Mocha</a></li>
+	<li><a href="#page71">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Mocha Smoothie</a></li>
+	<li><a href="#page72">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Pepresso</a></li>
+	<li><a href="#page73">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Paprica Smoothie</a></li>
+	<li><a href="#page74">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Protein Hazelnut Smoothie</a></li>
+	<li><a href="#page75">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Red Eye</a></li>
+	<li><a href="#page76">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Rice Pudding Smoothie</a></li>
+	<li><a href="#page77">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Ristretto Baileys</a></li>
+	<li><a href="#page78">
+	<img src="glyphish-icons/100-coffee.png" class="ui-li-icon">Rum Vanilla Smoothie</a></li>
+	<li><a href="#page79">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Spanish Coffee</a></li>
+	<li><a href="#page80">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Tabasco Espresso</a></li>
+	<li><a href="#page81">
+	<img src="glyphish-icons/34-coffee.png" class="ui-li-icon">Viennese Coffee</a></li>
+	<li><a href="#page82">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Water Melon Coffee</a></li>
+	<li><a href="#page83">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">White Rum Coffee</a></li>
+	<li><a href="#page84">
+	<img src="glyphish-icons/88-beer-mug.png" class="ui-li-icon">Wine Coffee Drink</a></li>
+</ul>	
+	</div><!-- /content -->
+
+		<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page1" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	</div>
+	
+</div><!-- /page -->
+
+
+<div data-role="page" id="history" data-add-back-btn="true"><!-- page history-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee History</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	
+	
+	<strong>Coffee legends</strong>
+<p>There are many legends about the discovery of coffees stimulating effects. One of the oldest 
+    tells of a young goatherd in Ethiopia in around 850 AD. 
+    He had noticed that after eating a certain kind of berry, his goats would become particularly lively.
+	</p><p>
+	Monks then tried the fruit but were so disappointed by the bitter flavour that they threw it in the fire. Soon, a delicious aroma was wafting around their nostrils. 
+	The monks were so curious that they used the roasted fruits to create a brew, 
+	which they saw as a gift from God because it helped them to stay awake half the night.
+	</p><p>
+
+
+<strong>Discovery of Coffee</strong>
+ <p>The culture of coffee-drinking goes back to the 11th century. 
+   It was then that coffee was first imported to Arabia from its original home in Ethiopia. 
+   The Persians were enraptured by the 
+   invigorating effects of this new "wine of Islam" because real wine was strictly forbidden to Muslims. 
+   The word "coffee" comes from the ancient Arabic "qahwah".
+	</p><p>
+	In the second half of the 15th century, coffee spread to the Kingdom of Arabia 
+	via Mecca and Medina and went on to reach Cairo in 1510.
+	</p><p>
+	In the first half of the 16th century, the Osmanic Kingdom reached its zenith. 
+	Coffee came to play an increasingly important role in Arabia, Asia Minor, 
+	Syria, Egypt and in South Eastern Europe. The first coffee houses were opened in 
+	Damascus and Aleppo in 1530 and 1532.</p><p>
+
+<strong>Coffee conquers Europe</strong>
+ <p>In 1615, Venetian merchants brought back the first sacks of coffee to western Europe. 
+    Its delicious aroma and invigorating effects rapidly established it as a favourite beverage, 
+    and coffee houses were soon springing up throughout Europe. Their minds never far from business, 
+    the bourgeoisie were soon singing the praises of coffees sobering effects, 
+    which turned drunkards into reliable workers. Dutch and Englisch seafarers exported the plant 
+    to their colonies all over the world.
+	</p><p>
+	When the Turks were forced to break off their siege of Vienna in 1683, 
+	they left behind them 500 sacks of coffee. An enterprising Polish businessman used it 
+	to open the citys first coffee house.
+	</p><p>
+	The spread of the beverage was accompanied by huge growth of coffee tree cultivation. 
+	As early as the end of the 17th century, successful efforts were made to grow coffee trees 
+	in greenhouses. One of these plants was sent to Louis XIV in Paris as a gift in 1714. 
+	This single plant is thought to have been the ancestor of millions of coffee trees.
+	</p><p>
+
+
+	
+	
+	<strong>Coffee in the 20th century</strong>
+
+<p>	 In the early 20th century, Brazil was the world’s biggest coffee producer. Today almost the entire production of coffee comes from Central America, Brazil and the tropical parts of South America. World coffee production amounts to around 100 million bags a year with Brazil in first place representing about ¼ of total production. 8 ½ million bags are produced in Brazil.
+</p>
+<p>
+Coffee roasting in the home was definitively replaced by the finished industrial product. In 1901 the Japanese Dr Sartori Kato presented the first soluble coffee powder. In 1938 the Nestlé company laid the foundation for the commercial marketing of soluble coffee (instant coffee).
+</p>
+<p>
+The scale of coffee use is reflected in the trend of world raw coffee consumption in the last 250 years.
+<p>
+1750: 600,000 bags, 1850: 4 million bags, 1950: 36 million bags, 1995: 94 million bags, 2000: 103 million bags.
+</p>
+<p>
+The demand for coffee has made this hot beverage the second most important traded commodity after petroleum products. This trend was accompanied by phases of overproduction, incineration of surplus stocks, collapsing prices, world economic crisis, declining consumption during the two world wars and the creation of world coffee agreements to stabilize coffee prices. In Germany after the end of the Second World War, coffee became a symbol of economic reconstruction and the economic miracle. Coffee drinking was synonymous with being able to afford things again.
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="inline">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#menu" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page history -->
+
+
+<div data-role="page" id="tips" data-add-back-btn="true"><!-- page tips-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Tips</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+
+<strong>Grinding Coffee Beans</strong>
+
+  
+   <p> Learn how to pair grind-type with coffee machine to create the perfect match.
+   </p><p>
+    Grinding at Home vs. at the Store</p>
+	<p>There is no doubt grinders are fun gadgets for coffee-lovers, 
+	but do you need a home grinder?</p>
+	That depends
+	<p>
+	The upside: they are great if you buy more than two weeks worth of beans at a time. 
+	The coffee flavor will last longer if the beans are kept whole, then ground right before brewing. 
+	</p><p>
+	The downside: it can be messy takes a little longer. 
+	</p><p>
+
+The bottom line: you can always get it ground where you bought it--coffee 
+will maintain great flavor for up to two weeks. 
+But, there is something to be said for indulging in the ritual of preparing each cup of coffee, 
+beginning to end. "Because it is fun" is as good a reason as any to grind fresh beans each morning.
+</p><p>
+The Daily Grind
+<p>French Press (coarse grind): the grounds should not stick together.</p><p>
+
+Automatic Flat Bottom (medium grind): 
+<p>some of the grounds should stick together, but most should fall away.
+</p><p>
+
+Automatic Cone, Gold Cone, and Steam-driven Espresso Machine (medium-fine): 
+<p>most should stick together, 
+but you should still be able to see individual particles easily.
+</p><p>
+Pump-driven Espresso Machine (fine): 
+<p>most grounds should stick together, 
+possibly falling away in clumps, but they should not be so fine they appear to completely melt together.
+</p><p>
+PS:
+<p>Some Espresso machine have a built in grinder.</p><p>
+
+ <strong>Art of steaming milk</strong>    
+
+<p>Simple Instructions on Frothing and Steaming Milk:</p>
+<p>1. Begin with cold milk, preferably 1% or 2% low fat. Fill the chilled stainless steel pitcher to just under half full.
+</p><p>
+2. Insert the steaming wand to about one half inch from the surface in the center of the pitcher. Turn the steaming wand on all of the way. It is best to do this as quickly as possible.
+</p><p>
+3. Keeping the steaming wand at the same depth of one half inch, tilt the pitcher just enough to create a whirlpool effect with the milk. Lower the pitcher slowly as the froth forms.
+</p><p>
+4. When you have enough froth for your beverage, raise the pitcher so that the steaming wand reaches the milk in the bottom. You will want to steam the milk until it reaches 140 degrees. Since some machines require you to turn the steam off before removing the milk and others require the milk to be removed prior to turning it off, be sure to check your manual before you begin.
+</p><p>
+Breve is a term added to the name of any Espresso-based beverage that substitutes half and half for milk. For example, a Cappuccino Breve would be made exactly the same way as a regular cappuccino, except half and half would be steamed and frothed in the place of the1% or 2% milk.
+
+	
+</div><!-- /content -->
+<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="inline">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#menu" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page tips -->
+
+
+
+<div data-role="page" id="page1" data-add-back-btn="true"><!-- page 1-->
+
+	<div data-role="header" data-theme="a">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>ADVOCAAT ESPRESSO</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/1.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 3 cl advocaat<br>
+	 1 cl sweetened condensed milk<br>
+	 1 cl Grappa<br>
+	 25 ml Espresso<br>
+	 20 ml milk foam<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Pour first the sweetened condesed milk
+	 in a glas. Add the advocaat than slowly
+	 over a spoon the fresh Espresso. 
+	 <br>
+	 Pour the Grappa into it and serve with milk
+	 foam on top.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page2" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 1 -->
+
+
+
+<div data-role="page" id="page2" data-add-back-btn="true"><!-- page 2 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Smotthie</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Almonds Dates Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/2.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 cup coffee, chilled<br>
+	 1/4 cup almonds, raw<br> 
+	 8 dates, 1 tsp vanilla<br>
+	 8-12 ice cubes<br> </div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Add the coffee, almonds, dates, and 
+	 vanilla into the blender. Blend until 
+	 the almonds and dates are creamy. Add ice. 
+	<br>
+	 Blend again until the ice is completely 
+	 smooth. Serves 1-2
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page3" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 2-->
+
+
+
+<div data-role="page" id="page3" data-add-back-btn="true"><!-- page 3 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Cocktail</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Amaretto Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><br><br><img src="images/3.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 ½ cups of hot water.<br>
+	 1 tablespoon of instant coffee crystals.<br>
+	 ½ cup of amaretto.<br>
+	 Dessert topping.<br></div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Stir the hot water and instant coffee 
+	 crystals together. Microwave on full power
+	 for 3 minutes or until steaming hot.
+	<br>
+	 Stir in amaretto.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page4" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 3 -->
+
+
+
+<div data-role="page" id="page4" data-add-back-btn="true"><!-- page 4 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Cocktail</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Amarillo Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><br><br><img src="images/4.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 4 fresh egg yolks<br>
+	4 tbs. sugar<br>
+	80 ml milk<br>
+	40 ml cold coffee<br>
+	4 scoops vanilla ice cream </div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Make coffee and allow to cool
+Put the four fresh egg yolks together with the sugar and milk in the Drink Master and blend until frothy
+Add the cold coffee and mix briefly.<p>
+Put one scoop of vanilla ice cream in each dessert dishes and pour the egg yolk mix over them
+If desired, garnish with slivers of chocolate and a slice of carambola (star fruit)
+Eat with a spoon.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page5" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 4 -->
+
+
+
+<div data-role="page" id="page5" data-add-back-btn="true"><!-- page 5 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Banana Flip</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/5.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	2 cl banana flavoured coffee syrup<br>
+	1 tsp vanilla sugar<br>
+	1 coffee<br>
+	Whipped cream<br>
+	Chocolate flakes<br> </div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Make yourself a coffee.
+	Add the coffee syrup and vanilla sugar and stir well until the sugar crystals have dissolved.
+	Pour the coffee drink into a decorative glass.<br>
+	Decorate your Banana Flip with a topping of whipped cream and a few chocolate flakes.
+</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page6" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 5 -->
+
+
+<div data-role="page" id="page6" data-add-back-btn="true"><!-- page 6 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Banana Liqueur Cocktail</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><br><br><img src="images/6.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 ristretto (30 ml)<br>
+	2 cl banana liqueur <br>
+	1 tbsp whipped cream<br>
+	1 pinch ground ginger<br> </div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Pour banana liqueur into a small martini glass.
+	Slowly add freshly prepared ristretto so that two layers form.
+	Top with whipped cream.
+	<p>Serving suggestion:<br>
+
+	Dust cream with a little ground ginger.</p>
+</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page7" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 6 -->
+
+
+<div data-role="page" id="page7" data-add-back-btn="true"><!-- page 7-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Black Eye</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/7.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 cup Coffee<br>
+	2 shots Espresso<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	A Variations of the Red Eye is called the Black Eye, made with two shots of Espresso.
+	 <br>
+	 Pour the Grappa into it and serve with milk
+	 foam on top.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page8" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 7 -->
+
+
+<div data-role="page" id="page8" data-add-back-btn="true"><!-- page 8-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Breve</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/8.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1/2 Milk<br>
+	1/2 Espresso<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Breve is a milk based Espresso drink made with half-and-half, 
+	or light cream, instead of whole milk. 
+	<p>
+	Breve means "short" in Italian, 
+	and in some locations refers to a cappuccino made with light cream.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page9" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 8 -->
+
+
+<div data-role="page" id="page9" data-add-back-btn="true"><!-- page 9 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Affogato</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/9.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 Scoop vanilla ice<br>
+	1 shot Espresso<br>
+ </div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	An Italian dessert drowning in Espresso. 
+	Affogatos can be made by covering ice cream with strong coffee. 
+	<p>
+	A typical Italian Affogato is a scoop of vanilla gelato covered with a shot of 
+	Espresso and served immediately. Affogatos should not have too much melted ice cream or gelato, 
+	and should be bitter-sweet with a combination of textures. 
+	</p>
+	Popular Affogatos include Vanilla Affogato, Mocha Affogato, and Peppermint Affogato.
+</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page10" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 9 -->
+
+
+
+<div data-role="page" id="page10" data-add-back-btn="true"><!-- page 1-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Americano</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/10.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	5 oz hot water<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Prepare Espresso as you normally would, then top up  with 5 oz of hot water.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page11" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 10 -->
+
+
+
+
+<div data-role="page" id="page11" data-add-back-btn="true"><!-- page 11-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Con Hielo</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/11.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 Espresso <br>
+	1 tsp Sugar<br>
+	Ice 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Add sugar to cup.<br>
+	Extract Espresso directly into cup.
+	Swirl Espresso and sugar to blend and melt.
+	Immediately pour this mixture over ice cubes and serve.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page12" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 11 -->
+
+
+
+
+<div data-role="page" id="page12" data-add-back-btn="true"><!-- page 12 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Con Panna</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/12.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	Whipped cream<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Espresso con Panna is italian for "Espresso with cream".<br>
+	An Espresso Con Panna is a shot of Espresso topped with a dollop of whipped cream.<br>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page13" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 12 -->
+
+
+
+<div data-role="page" id="page13" data-add-back-btn="true"><!-- page 13 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Cortado</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/13.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1/2 Espresso<br>
+	1/2 frothed milk<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	A cortado is a mini-cappuchino. Typically it is a 2 ounce Espresso and 2 ounces of 
+	frothed milk served in a four ounce demi-tasse cup.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page14" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 13 -->
+
+
+
+<div data-role="page" id="page14" data-add-back-btn="true"><!-- page 14 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Creme</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/14.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	4 oz Espresso<br>
+	1 tbs cream<br>
+
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Mix and serve hot.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page15" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 14 -->
+
+
+
+<div data-role="page" id="page15" data-add-back-btn="true"><!-- page 15-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Latte</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/15.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 Espresso<br>
+	2 shots foamed milk<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>A shot or two of Espresso in a cup filled with frothy steamed milk. </p>
+
+	Baristas will sometimes pour the frothy milk through the Espresso in an open mug to make 
+	an artistic design in the crema (Espresso foam) floating on the surface. 
+	<p>"Latte" is short for "Caffe Latte", which is Italian for "coffee with milk". </p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page16" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 15 -->
+
+
+
+<div data-role="page" id="page16" data-add-back-btn="true"><!-- page 16 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Macchiato</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/16.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+	1 shot Espresso<br>
+	very little milk<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Prepare Espresso as you normally would.  </p>
+	Foam milk using proper technique.  <br>
+	Spoon a dollop or two of foam onto the top of the Espresso.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page17" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 16-->
+
+
+
+<div data-role="page" id="page17" data-add-back-btn="true"><!-- page 17 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Café Noisette</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/17.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	Milk<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Cafe Noisette is Espresso with a small amount of milk added. </p>
+
+	Cafe Noisette is French for "hazelnut coffee", 
+	a reference to the color of the Espresso.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page18" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 17 -->
+
+
+
+<div data-role="page" id="page18" data-add-back-btn="true"><!-- page 18 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Campari Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/18.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	45 ml espresso<br>
+	Campari or Red Bols<br>
+	Lemonade<br>
+	Ice cubes<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Take a long drink glass.<br>
+	Fill to just under the brim with ice cubes.<br>
+	<p>Add 2 cl of Campari followed by fizzy lemonade until the glass is two thirds full.
+	Add two straws to the glass.</p>
+	<p>In a separate receptacle, prepare an espresso with 45 ml of water.
+	Pour the hot, freshly prepared espresso into the glass over an ice cube. 
+	Be careful not to mix the espresso with the Sanbittèr. This creates an attractive  
+	layered effect in the glass.</p>
+	Serving suggestion:<br>
+	Stir the coffee speciality well before serving.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page19" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 18 -->
+
+
+
+<div data-role="page" id="page19" data-add-back-btn="true"><!-- page 19 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Cappucchino</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/19.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1/3 Espresso <br>
+	1/3 steamed milk <br> 
+	1/3 foamed milk <br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>A Classic Cappuccino is made with  1-1/2 oz of  Espresso topped with 2-3 oz of foamed milk. 
+</p> 
+
+	<p>The "Basic Cappuccino" is more common in North America.
+	Basic Cappuccino consists of:</p>
+	1/3 Espresso<br>
+	1/3 steamed milk<br>
+	1/3 foamed milk<br>
+	<p>Foam milk as per proper foaming technique.  
+	Use spoon to hold foam in foaming g pitcher and pour steamed milk in your serving glass.  
+	Then spoon  milk foam on top.  </p>
+	Then brew the Espresso directly into the serving glass.  
+	This creates a layered effect .  
+	<p>
+	If your serving glass is too large to fit underneath your brewing head, 
+	brew Espresso into a separate vessel , then pour into the serving glass.  
+	</p>
+	Many garnish with Cinnamon,  powdered or shaved chocolate.
+
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page20" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 19 -->
+
+
+
+<div data-role="page" id="page20" data-add-back-btn="true"><!-- page 20 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Caribbean Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><br><br><img src="images/20.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 3 cl advocaat<br>
+	 1 cl sweetened condensed milk<br>
+	 1 cl Grappa<br>
+	 25 ml Espresso<br>
+	 20 ml milk foam<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Pour first the sweetened condesed milk
+	 in a glas. Add the advocaat than slowly
+	 over a spoon the fresh Espresso. 
+	 <br>
+	 Pour the Grappa into it and serve with milk
+	 foam on top.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page21" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 20 -->
+
+
+<div data-role="page" id="page21" data-add-back-btn="true"><!-- page 21 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Cherry Lady</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/21.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 6cl cherry syrup<br>
+	 4 ice cubes<br> 
+	 1 latte macchiato<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Prepare the latte macchiato.</p>
+	 
+	 Place the cherry syrup, the ice cubes and 
+	 the latte macchiato in a blender and blend   
+	 until smooth. 
+	<p>
+	 Serve in a small martini glass 
+	 and decorate it with cherries.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page22" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 21 -->
+
+
+<div data-role="page" id="page22" data-add-back-btn="true"><!-- page 22 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Choco Espresso Cocktail</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/22.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	4 cl Advocaat<br>
+	3 cl espresso<br>
+	3 cl chocolate-liqueur<br>
+	1 cl caramel-syrup<br>
+	small pinch of ocean salt
+	
+	3 cl heavy cream<br>
+	amarettini or hippen to decorate
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Mix all ingredients and pour into glass
+	 through tea strainer. Whip heavy cream
+	 and lay on to drink (will float).
+	<p>
+	 Serve with amerettini or stick hippen 
+	 (fine wafers) into glass.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page23" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 22 -->
+
+
+<div data-role="page" id="page23" data-add-back-btn="true"><!-- page 23 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Cinnamon Vanilla Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/23.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients (for 4):</strong><br><br>
+
+	 1 litre of milk<br> 
+	 100 g dark chocolate<br> 
+	 1 cinnamon stick<br>
+	 1 vanilla pod<br>
+	 1 strong coffee (110 ml)<br> 
+	 Grated zest of half an untreated orange
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Place the milk, crumbled chocolate and the  
+	 cinnamon stick into a saucepan and bring to
+	 the boil at a medium temperature, stirring
+	 all the time. Remove the saucepan from
+	 the cooker. 
+	<p>
+	 Stir the vanilla pod, the pulp, 
+	 coffee and orange zest into the hot milk and  
+	 leave to infuse briefly.
+	</p>
+	 Fill into glasses.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page24" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 23 -->
+
+
+<div data-role="page" id="page24" data-add-back-btn="true"><!-- page 24 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coconut Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/24.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 1/2 cup coffee, chilled<br>
+	 3 tablespoons coconut milk powder<br>
+	 3 tablespoons coconut palm sugar<br>
+	 1/2 teaspoon stevia<br>
+	 8 ice cubes
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p>Add the coffee, coconut milk powder, 
+	 coconut palm sugar, stevia, and ice 
+	 into the blender. 
+	 </p>
+	<p> Blend until the smoothie is completely smooth. </p>
+	 Serves 1-2
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page25" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 24 -->
+
+
+<div data-role="page" id="page25" data-add-back-btn="true"><!-- page 25 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee Cocktail with Grappa</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/25.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 2 cl grappa<br>
+	 200 ml hot espresso<br>
+	 200 ml milk<br>
+	 2–4 tbsp sugar<br>
+	 cocoa powder
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p>Fill grappa into high glasses. Stir sugar into
+	 the espresso. Put two thirds of the espresso
+	 onto the grappa. Make hot milk with the 
+	 espresso frother and mix with remaining 
+	 espresso.Let the milk slowly run into the
+	 glasses. 
+	 </p>
+	 Decorate with the remaining froth
+	 milk on the top of the espresso.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page26" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 25 -->
+
+
+
+<div data-role="page" id="page26" data-add-back-btn="true"><!-- page 26 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee La Bamba</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/26.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 espresso (45 ml)<br>
+	 2 cl advocaat<br>
+	 1 cl Cointreau<br>
+	 2 cl orange juice<br>
+	 1 tbsp whipped cream<br>
+	 Orange zest
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Put advocaat, Cointreau and orange juice
+	 into a glass.
+	</p>
+	 Add the freshly prepared espresso and top 
+	 with whipped cream and orange zest.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page27" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 26 -->
+
+
+
+<div data-role="page" id="page27" data-add-back-btn="true"><!-- page 27 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee Moretto</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/27.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients (for 2):</strong><br><br>
+
+	 1 espresso (50 ml)<br>
+	 1 small cup milk (80 ml)<br>
+	 1 cup crushed ice (150 ml)<br>
+	 10 ml cognac<br>
+	 20 ml vanilla syrup<br>
+	 20 ml Kahlúa (coffee liqueur)
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p> Fill the ice with the espresso in shaker.
+	 Shake for app. 20 sec so that the espresso
+	 is immediately annealed. Form 2 layers with
+	 the vanilla syrup and Kahlúa. 
+	</p>
+	 Blend the 
+	 espresso with the cognac and milk and put
+	 it carefully into the glasses.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page28" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 27 -->
+
+
+
+<div data-role="page" id="page28" data-add-back-btn="true"><!-- page 28 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee Orangiata</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/28.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 2 tsp sugar<br>
+	 2 cl Cointreau<br>
+	 110 ml coffee<br>
+	 1 tbs whipped cream<br>
+	 Orange peel
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p>Heat briefly the Cointreau and the sugar
+	 in a glass and add the coffee.
+	 </p>
+	 
+	 Garnish with whipped cream and 
+	 orange zests.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page29" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 28 -->
+
+
+
+<div data-role="page" id="page29" data-add-back-btn="true"><!-- page 29-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee Rose</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/29.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 60 ml espresso<br>
+	 frothed milk<br>
+	 liqueur "Tequilla rose"<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Pour the "Tequilla rose" into a small 
+	 conical glass (1cl).</p>
+	 
+	 Cover the liqueur with hot frothed milk.
+	 
+	<p>
+	 Top up the glass with hot espresso.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page30" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 29 -->
+
+
+
+<div data-role="page" id="page30" data-add-back-btn="true"><!-- page 30 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee Veluto</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/30.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 double espresso (60 ml)<br>
+	 3 cl vanilla syrup<br>
+	 2 teaspoons grated chocolate<br>
+	 2 scoops vanilla ice cream<br>
+	 1 small cup crushed ice (80 ml)
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Place the double espresso with the 
+	 vanilla syrup, 2 scoops of vanilla ice 
+	 cream, 2 tps grated chocolate and the
+	 the small cup of crushed ice in the mixer,
+	 Mix well. </p>
+	
+	 Fill into glasses and serve.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page31" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 30-->
+
+
+
+<div data-role="page" id="page31" data-add-back-btn="true"><!-- page 31 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee White Lady</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/31.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 30 ml advocaat<br>
+	 10 ml Amaretto<br>
+	 10 ml caramel syrup<br>
+	 1 espresso<br>
+	 200 ml hot milk and milk foam
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Pour the advocaat, Amaretto and carmel
+	 syrup into a glass. Add hot milk and 
+	 milk foam to the mixture. 
+	</p>
+	 Slowly add the espresso and decorate with chocolate chips.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page32" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 31 -->
+
+
+
+<div data-role="page" id="page32" data-add-back-btn="true"><!-- page 32 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Coffee Winter Magic</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/32.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 tsp hazelnut spread (Nutella)<br>
+	 1 tsp honey<br>
+	 pinch of ginger<br>
+	 cardamom<br>
+	 strong shot of Espresso<br>
+	 milk
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Stir 1tsp hazelnut spread (Nutella) and
+	 1tsp honey, with a pinch of ginger and 
+	 cardamom until creamy and pour into the cup. 
+    </p>
+     Add a strong shot of Espresso and a 
+     frothy milk topping like a Cappuccino.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page33" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 32 -->
+
+
+
+<div data-role="page" id="page33" data-add-back-btn="true"><!-- page 33 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Cold Caribbean Cocktail</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/33.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 espresso <br>
+	 20 ml coconut liqueur<br>
+	 10 ml dark rum<br>
+	 3 ice cubes<br>
+	 Cinnamon powder<br>
+	 sugar for decorating<br>
+	 50 ml whipping cream<br>
+	 1 lemon wedge<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p>Use the lemon wedge to moisten all 
+	 around the edge of a cocktail glass
+	 and place glass upside down on a plate
+	 of sugar. Pour coconut liqueur and
+	 rum into the glass. 
+	</p>
+	 Add espresso. 
+	 <br>
+	 Shake up the cream and ice in a shaker and 
+	 carefully pour into the glass.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page34" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 33 -->
+
+
+
+<div data-role="page" id="page34" data-add-back-btn="true"><!-- page 34 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Dead Eye</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/34.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 cup Coffee<br>
+	3 shots Espresso<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Fill cup with coffee, leaving enough room for Espresso shot(s) and condiments if desired.
+	Add Espresso shot(s) on top.</p>
+	Adding the Espresso shots AFTER the coffee is a personal preference and you should ask your 		customer how they prefer it made.
+	<p>
+	Some like the Espresso (and condiments) in the cup first 
+	so that the coffee acts as a natural blender afterwords.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page35" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 34 -->
+
+
+<div data-role="page" id="page35" data-add-back-btn="true"><!-- page 35 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Dry Cappucchine</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/35.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	2/3 Espresso <br>
+	1/3 foamed milk<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>A dry Cappuccino is the same drink as Cappuccino without the hot milk (steamed milk).</p>
+	Cappuccinos are traditionally served in a small cup, or demitasse.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page36" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 35 -->
+
+
+
+<div data-role="page" id="page36" data-add-back-btn="true"><!-- page 36 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Easy Iced Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/36.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 2 teaspoons instant coffee granules<br>
+	 1 teaspoon sugar<br>
+	 3 tablespoons warm water<br>
+	 6 fluid ounces cold milk<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> In sealable jar, combine instant coffee,
+	 sugar and warm water. Cover the jar and 
+	 shake until it is foamy. Pour into a 
+	 glass full of ice. 
+	</p>
+	 Fill the glass with milk.
+	 Adjust to taste if necessary.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page37" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 36 -->
+
+
+<div data-role="page" id="page37" data-add-back-btn="true"><!-- page 37 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/37.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	7g finely ground coffee<br>
+	1 oz water<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>The Espresso shot forms the basic ingredient for many coffee recipes.</p>
+       
+	Traditionally this is a single 1oz shot of coffee made with 7g of 
+	finely ground coffee extracted at
+	between 18 and 25 seconds. 
+
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page38" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 37 -->
+
+
+<div data-role="page" id="page38" data-add-back-btn="true"><!-- page 38 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Bon Bon</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/38.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	Condenced milk<br>
+	1 shot Espresso<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Condensed milk poured carefully over Espresso and served in a small glass.</p> 
+
+	The shot of Espresso remains separated from the milk until stirred, as in a black and white. 
+	<p>
+	Cafe Bonbon is French for "candy coffee". </p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page39" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 38 -->
+
+
+<div data-role="page" id="page39" data-add-back-btn="true"><!-- page 39 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Coretto</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/39.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	1 shot of Grappa<br>
+	Sugar<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Begin by freshly brewing one shot of Espresso into your Espresso cup, and add the shot of 		Grappa. </p>
+	Use sugar to sweeten to taste. 
+	<p>
+	Grappa is normally served in Italy as a fine after dinner drink for digestion, 
+	so this is the perfect coffee beverage to enjoy after a meal. </p>
+	The flavors of Grappa range similar to the flavors found in wine, 
+	so look for the grappa that is right for you!
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page40" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 39 -->
+
+
+
+<div data-role="page" id="page40" data-add-back-btn="true"><!-- page 40 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Doppio</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/40.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	2 shot Espresso<br>
+	1 shot water<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Double the quantity of Espresso and add 1 shot of water. </p>
+	Typically served in a cappuccino cup.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page41" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 40 -->
+
+
+
+<div data-role="page" id="page41" data-add-back-btn="true"><!-- page 41 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Lungo</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/41.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	1 oz water<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Espresso Lungo is also known as a "Long Espresso".</p>
+
+	A long Espresso is a single shot Espresso topped up with 1 oz of water. 
+	<p>
+	For a Double Lungo use a double shot of Espresso topped with 2 oz of water.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page42" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 41 -->
+
+
+
+<div data-role="page" id="page42" data-add-back-btn="true"><!-- page 42-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Macciato</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/42.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	1-2 Tbs foamed milk<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Espresso Macchiato is a single shot of Espresso topped 
+	with 1-2 tablespoons of foamed milk right in the Espresso cup.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page43" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 42-->
+
+
+
+<div data-role="page" id="page43" data-add-back-btn="true"><!-- page 43-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Ristretto</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/43.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p>Espresso Ristretto is also known as a "Short Espresso".  
+	</p>
+	Prepare Espresso as you normally would, however shorten the extraction time so there 
+	is less water dispensed.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page44" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 43 -->
+
+
+
+<div data-role="page" id="page44" data-add-back-btn="true"><!-- page 44 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Romano</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/44.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso <br>
+	strips lemon zest<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Serve Espresso in a small Espresso cup with the lemon slice.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page45" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 2-->
+
+
+
+<div data-role="page" id="page45" data-add-back-btn="true"><!-- page 3 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Espresso Viennese</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/45.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	2 shots Espresso<br>
+	1/8 tsp ground cloves<br>
+	1/2 tsp cinnamon<br>
+	1/2 tsp allspice<br>
+	whipped cream<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Mix all of the ingredients together with your fresh Espresso, 
+	and then top with whipped cream to serve.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page46" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 3 -->
+
+
+
+<div data-role="page" id="page46" data-add-back-btn="true"><!-- page 4 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Flat White</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/46.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	2 shots foamed milk<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Pull one shot Espresso.
+	<p>While pulling the shot, froth the milk. </p>
+	As the milk froths, use a spoon to fold the microbubbles from the top 
+	of the steaming pitcher to the bottom of the steaming pitcher. 
+	This will create a smoother, more velvety texture for your drink.
+
+	<p>
+	Combine the two ingredients. (Latte art optional.) 
+	Your flat white should have about 1/4 inch steamed milk on top.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page47" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 4 -->
+
+
+
+<div data-role="page" id="page47" data-add-back-btn="true"><!-- page 5 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Floridas Night Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/47.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 3/4 cup coffee<br>
+	 1 1/2 tsp Kahlua<br>
+	 1 1/2 tsp Frangelico<br>
+	 1 1/2 tsp Grand Marnier<br>
+	 1 1/2 tsp Baileys Irish Cream<br>
+	 (whipped cream)
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p> Mix the liqueurs together, 
+	 then add to hot coffee. </p>
+	
+	 Top with whipped cream, if desired. 
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page48" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 5 -->
+
+
+
+<div data-role="page" id="page48" data-add-back-btn="true"><!-- page 6 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Fresh Presso</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/48.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 espresso (40 ml)<br>
+	 1 p. (8.2 g) vanilla sugar<br>
+	 8 g demerara sugar<br>
+	 1 orange, crushed ice<br>
+	 3 cl vanilla syrup<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p> Cream the ice, sugar, vanilla pulp,
+	 vanilla syrup, a little orange juice 
+	 and the espresso in a mixer. 
+	</p>
+	 Fill into a glass and decorate with the orange peel.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page49" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 6 -->
+
+
+<div data-role="page" id="page49" data-add-back-btn="true"><!-- page 7 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>French Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/49.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 coffee (110 ml)<br>
+	 2 cl Cognac<br>
+	 1 tsp sugar<br>
+	 2 tbsp whipped cream<br>
+	 Chocolate shavings, for decoration
+</string>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p> Pour Cognac and sugar into a wide-bowled,
+	 heat-resistant glass. Use the coffee  
+	 machines steam nozzle or a Bunsen burner 
+	 to heat the liquid. Add the coffee and top 
+	 with whipped cream.</p>
+	
+	 Decorate with chocolate shavings.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page50" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 7 -->
+
+
+<div data-role="page" id="page50" data-add-back-btn="true"><!-- page 8 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Ginger Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/50.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 teaspoon honey<br>
+	 1 knife point ginger<br>
+	 45ml Espresso<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Pour the honey and the ginger 
+	 powder in a cup.
+	 Prepare a strong espresso and
+	 let it directly flow into the cup.
+	 </p>
+	 Stir the espresso and enjoy.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page51" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 8 -->
+
+
+<div data-role="page" id="page51" data-add-back-btn="true"><!-- page 9 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Gingerbread Latte</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/51.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+ 	 2 fluid ounces espresso coffee<br>
+	 2 tablespoons gingerbread flavored syrup<br>
+	 1/2 cup milk, steamed<br>
+	 1/8 cup whipped cream<br>
+	 1 pinch ground nutmeg<br>
+	 1 pinch ground cinnamon<br>
+	 1/2 teaspoon vanilla powder<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> In a coffee mug, combine espresso coffee
+	 with flavored syrup. Pour in steamed milk.
+	</p>
+	 Top with whipped cream, and sprinkle 
+	 with nutmeg, cinnamon, and vanilla powder.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page52" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 9 -->
+
+
+<div data-role="page" id="page52" data-add-back-btn="true"><!-- page 10 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Golden Eye</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/52.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 2 espressi<br>
+	 4 cl advocaat<br>
+	 150 ml full fat milk<br>
+	 some cinnamon and cardamom powder<br>
+	 some vanilla sugar, gold leaf
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Foam the milk in a jug.
+	<p> Place 4 cl of advocaat in a
+	 cappuccino cup and add 2 espressi.
+	 Top the drink  with the foamed milk.
+	</p>
+	
+	 Decorate with cinnamon, cardamom
+	 and the gold leaf.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page53" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 10 -->
+
+
+<div data-role="page" id="page53" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Hazelnut Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/53.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 10 oz brewed coffee, hot<br>
+	 1 oz chocolate liqueur<br>
+	 1 oz hazelnut liqueur<br>
+	 cocoa power for decoration
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> In a warm 12-oz wine glass, mix coffee
+	 and liqueurs. 
+	 </p>
+	 Top with a sprinkling of
+	 cocoa powder. 
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page54" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page54" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Hard Coffee Soda</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/54.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 pint chocolate ice cream<br>
+	 5 scoops vanilla ice cream<br>
+	 1/2 cup light rum<br>
+	 2 tbs finely ground coffee<br>
+	 Instant coffee crystals<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Mix everything except the instant coffee
+	 together in a blender. 
+	</p>
+	 Serve topped with 
+	 a sprinkle of coffee crystals.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page55" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page55" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Hot Russian Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/55.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 2 cl vodka<br>
+	 1 cl vanilla syrup<br>
+	 1 espresso<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Fill vodka, vanilla syrup and the freshly
+	 prepared espresso in a martini glass
+	 
+	 </p>
+	 At the end pour the still liquid, cold blended
+	 whipping cream carefully in a glass so 
+	 that two layers form.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page56" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page56" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Iced Chocolate Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/56.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 espresso (50 ml)<br>
+	 1 small cup milk (80 ml)<br>
+	 1 cup crushed ice (150 ml)<br>
+	 20 ml chocolate syrup<br>
+	 Whipped ream, melted chocolate<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p>Fill crushed ice and espresso in a shaker. 
+	 Shake 20 seconds. Put the milk into it
+	 with a little chocolate syrup and blend well.
+	</p>
+	 Pour the drink into two glasses, garnish 
+	 with whipped cream and melted chocolate.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page57" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page57" data-add-back-btn="true"><!-- page 1-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Iced Irish Cream</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/57.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 110ml coffee, 5 ice cubes<br>
+	 1 tsp. brown sugar, 50 ml milk<br>
+	 20 ml Baileys Irish Cream<br> 
+	 1 scoop coffee ice cream<br>
+	 1 tbs. whipped cream<br>
+	 grated chocolate<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Fill 5 ice cubes with the coffee in a shaker.
+	 Shake 20 second. Stir it with brown sugar,  
+	 milk and Baileys Irish Cream and fill it into 
+	 glasses.
+	 <p>
+	 Garnish with cream and grated chocolate.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page58" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 1 -->
+
+
+
+<div data-role="page" id="page58" data-add-back-btn="true"><!-- page 2 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Iced Lemon Espresso</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/58.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	2 x 30 ml espresso<br>
+	Ice cubes<br>
+	Lemons<br>
+	2 tsp sugar<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Place the ice cubes and 2 tsp of sugar in a small shaker.
+	Add the zest (peeled skin) of 2 lemons.
+	Prepare 2 espressi and add to the shaker.
+	Shake up vigorously for about 20 seconds.</p>
+	Serving suggestion:<br>
+	Immediately after preparation, pour the freshly shaken drink into the shot glasses. 
+	Decorate simply with slivers of lemon zest.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page59" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 2-->
+
+
+
+<div data-role="page" id="page59" data-add-back-btn="true"><!-- page 3 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Iced Mochaccino</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/59.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 shot Espresso<br>
+	Ice<br>
+	Chocolate syrup<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Pour one shot of freshly brewed Espresso over ice and add chocolate syrup to taste.</p>
+1. Fill with cold milk.  <br>
+2. Top up with foamed milk.  <br>
+3. Top with whipped cream.  <br>
+4. Garnish with chocolate syrup.<br>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page60" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 3 -->
+
+
+
+<div data-role="page" id="page60" data-add-back-btn="true"><!-- page 4 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Iced Mochas</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/60.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 1/2 cups cold coffee <br>
+	 2 cups milk <br>
+	 1/4 cup chocolate syrup <br>
+	 1/4 cup white sugar <br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>  Pour coffee into ice cube tray. Freeze until 
+	 solid, or overnight. In a blender, combine 
+	 coffee, ice cubes, milk, chocolate syrup and
+	 sugar. Blend until smooth. </p>
+	
+	 Pour into glasses and serve.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page61" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 4 -->
+
+
+
+<div data-role="page" id="page61" data-add-back-btn="true"><!-- page 5 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Iced Vanilla Cream Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/61.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 espresso (50 ml)<br> 
+	 1 small cup milk (80 ml)<br>
+	 1 small cup crushed ice (80 ml)<br>
+	 30 ml chocolate syrup<br>
+	 2 scoops of vanilla ice cream<br> 
+	 1 tbs. whipped cream, grated chocolate<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Fill crushed ice and espresso in a shaker. 
+	 Shake 20 seconds. Put chocolate syrup in 2
+	 cocktail glasses, top with vanilla ice cream.
+	 Blend the espresso with the milk and pour 
+	 into the glasses. 
+	</p>
+	 Garnish with chocolate.<br>
+	 Eat with a spoon.
+
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page62" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 5 -->
+
+
+
+<div data-role="page" id="page62" data-add-back-btn="true"><!-- page 6 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Indian Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/62.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 10cl yoghurt<br>
+	 4cl sugar water<br> 
+	 ratio of 1:1<br>
+	 boil and leave to cool<br> 
+	 2 espressi<br>
+	 3-4 ice cubes<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Fill the yoghurt, the sugar water 
+	 and the ice cubes into a shaker.
+	 Add 2 freshly prepared Espressi.
+	 Blend all the ingredients until creamy.
+	</p>
+	 Serve in a small glass (10cl) with a straw.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page63" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 6 -->
+
+
+<div data-role="page" id="page63" data-add-back-btn="true"><!-- page 7 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Irish Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/63.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 40ml (2 parts) Irish whiskey<br>
+	 80ml (4 parts) hot coffee<br>
+	 30ml (1½ parts) fresh cream<br>
+	 1 tsp brown sugar<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Heat the coffee, whiskey and
+       sugar; do not boil. </p>
+	Pour into glass
+       and top with cream; serve hot.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page64" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 7 -->
+
+
+<div data-role="page" id="page64" data-add-back-btn="true"><!-- page 8 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Irish Latte</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/64.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 latte macchiato <br>
+	10 ml coconut syrup <br>
+	10 ml Irish whiskey <br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Pour the coconut syrup into a tumbler.
+	<p>Prepare the latte macchiato in the same glass.</p>
+	Finally, add the whiskey.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page65" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 8 -->
+
+
+<div data-role="page" id="page65" data-add-back-btn="true"><!-- page 9 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Jamaica Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/65.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 3/4 fluid ounce dark rum<br>
+	 3/4 fluid ounce coffee flavored liqueur<br>
+	 1 cup brewed coffee<br>
+	 2 tablespoons whipped cream<br>
+	 1 chocolate covered coffee bean<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Pour rum and coffee liqueur into a  
+	 decorative coffee glass. Fill glass  
+	 with hot coffee. 
+	</p>
+	 Garnish with whipped 
+	 cream and garnish with a coffee bean.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page66" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 9 -->
+
+
+<div data-role="page" id="page66" data-add-back-btn="true"><!-- page 10 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Latte Macciato</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/66.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	45 ml espresso<br>
+	 Milk and milk foam<br> 
+	 1.5 cl flavoured coffee syrup<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> The ratio of ingredients for this coffee 
+	 is two thirds milk and milk foam and one
+	 third coffee. As milk is more dense than
+	 espresso, the coffee floats on top of the 
+	 milk.
+	</p>
+	 Add a little flavoured syrup into the
+	 latte macchiato glass, if liked.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page67" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 10 -->
+
+
+<div data-role="page" id="page67" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Long Black</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/67.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+	1 Double-shot Espresso<br>
+	Hot water<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>The Down Under version of “americano”-style of Espresso is called a long black. 
+	It is made by pulling a double-shot of Espresso over hot water. </p>
+
+	Unlike the americano, however, the crema is retained and is less voluminous; thus the 		drink has a stronger flavor.
+
+	<p>Crema is destroyed, though, if the order in which a long black is made is reversed. 
+	Water must come first, then Espresso. </p>
+
+	A short black means basic Espresso in Australasian culture.\n
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page68" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page68" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Long Night Coffe</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/68.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	2 egg yolks, 30 g sugar<br>  
+	1 dl/100 ml espresso coffee<br>  
+	40 ml black coffee sweetened with sugar<br>  
+	a pinch of cardamom<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Whisk egg yolks and sugar until light and
+	creamy. Place bowl with the egg yolk
+	mixtureovera pan with boiling water and
+	keep whisking while you add the espresso.
+	Keep on whisking until the mixture goes
+	frothy and firm. 
+	</p>
+	Pour the black coffee into
+	a glass and top up with the espresso-mix.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page69" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page69" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Maracuya Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/69.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 double espresso 80 ml<br>
+	2cl sugar water<br>
+	ratio of 1:1, <br>
+	boil and leave to cool<br>
+	5 ice cubes<br>
+	4 cl maracuya syrup<br>
+	250 ml single cream
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Fill the cream and passion fruit syrup into the whipped cream maker 		and whip the cream. Place the whipped cream maker into the refrigerator.
+	Dip the edge of the glass into the sugar water, then into white sugar.
+	</p>
+	Mix the double espresso, sugar water and ice cubes thoroughly in the shaker 		and fill into the glass.
+	<p>Finish off with a passion fruit cream topping.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page70" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page70" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Mocha</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/70.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	Espresso <br>
+	Chocolate syrup <br>
+	Steamed milk<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> A Mocha Latte, or Mocha, is a coffee drink made from Espresso, chocolate 		syrup, and steamed milk. </p>
+
+	To make a Mocha, coat the bottom and sides of the cup or mug with about 1/2 		oz. of chocolate syrup. 
+	<p>
+	Add a shot or two of Espresso and fill with steamed milk. Add whipped cream if 		desired. </p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page71" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page71" data-add-back-btn="true"><!-- page 1-->
+<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Mocha Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/71.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 1/3 cup brewed coffee, chilled<br>
+	 1/3 cup almonds, raw<br>
+	 3 tablespoons raw cane sugar<br>  
+	 1 tablespoon cacao or carob<br>
+	 8-10 ice cubes<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Add the coffee, almonds, raw cane 
+	 sugar, and cacao or carob into the blender. 
+	 Blend until the almonds are creamy.
+	 Add ice. 
+	</p>
+	 Blend again until the ice is 
+	 completely smooth. <br>
+	Serves 1-2
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page72" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 1 -->
+
+
+
+<div data-role="page" id="page72" data-add-back-btn="true"><!-- page 2 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Pepresso</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/72.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	45 ml espresso<br>
+	1 cl chocolate sauce<br>
+	Mixed peppercorns<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Add the chocolate sauce to the espresso cup until the base of the cup is well covered.</p>
+Season the chocolate with a little freshly ground pepper.
+<p>Place the espresso cup under the coffee spout.</p>
+Prepare an espresso with 45 ml of water.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page73" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 2-->
+
+
+
+<div data-role="page" id="page73" data-add-back-btn="true"><!-- page 3 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Paprica Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/73.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 100 ml coffee, chilled <br>
+	 200 ml vanilla ice cream <br>
+	 3 tablespoon paprica powder <br>
+	 500 ml milk <br>
+	 1/2 - 1 banana <br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Add the coffee, ice cream and 
+	 milk into the blender. 
+	 Blend until its creamy. Add the
+	 banana and paprika powder. 
+	</p>
+	 Blend 
+	 again until everything is 
+	 completely smooth. <br>
+	 Serves 4
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page74" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 3 -->
+
+
+
+<div data-role="page" id="page74" data-add-back-btn="true"><!-- page 4 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Protein Hazelnut Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/74.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 250 ml milk <br>
+	 1-2 tsp coffee powder <br>
+	 1/2 cup protein powder <br>
+	 2 tablespoon hazelnuts <br>
+	 1 banana <br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Add everything into the 
+	 blender. </p>
+	 
+	 Blend until its creamy. 
+	 
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page75" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 4 -->
+
+
+
+<div data-role="page" id="page75" data-add-back-btn="true"><!-- page 5 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Red Eye</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/75.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 cup Coffee<br>
+	 1 shot Espresso<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> A cup of American style drip coffee with a shot of Espresso added. </p>
+
+	Also called a Shot in the Dark, a Depth Charge, or and Eye Opener.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page76" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 5 -->
+
+
+
+<div data-role="page" id="page76" data-add-back-btn="true"><!-- page 6 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Rice Pudding Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/76.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	200 ml rice pudding<br>
+	  100 ml chilled coffe<br>
+	  milk  <br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Add everything into the 
+	 blender. </p>
+	
+	 Blend until its creamy. 
+	<p>
+	 Add milk after your taste.</p>
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page77" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 6 -->
+
+
+<div data-role="page" id="page77" data-add-back-btn="true"><!-- page 7 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Ristretto Baileys</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/77.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	45 ml espresso<br>
+	20 ml whiskey liqueur<br>
+	200 ml milk<br>
+	Chocolate sauce or cocoa powder<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Prepare the espresso.
+	<p>Pour the whiskey liqueur into a glass and add the espresso.</p>
+	Prepare some milk foam and use it to fill the rest of the glass.
+	Serving suggestion:<br>
+
+	Decorate with chocolate sauce or cocoa powder.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page78" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 7 -->
+
+
+<div data-role="page" id="page78" data-add-back-btn="true"><!-- page 8 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Rum Vanilla Smoothie</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/78.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 ½ banan <br>
+	 100 ml vanilla ice cream <br>
+	 30 ml dark rum <br>
+	 1 dubble espresso, 60 ml <br>
+	 cinnamon 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 <p> Add everything into the 
+	 blender. 
+	</p>
+	 Blend until its creamy. <br>
+	
+	 Decorate with cinnamon.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page79" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 8 -->
+
+
+<div data-role="page" id="page79" data-add-back-btn="true"><!-- page 9 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Spanish Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/79.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 1 espresso<br>
+	 1 oz/30 ml spanish Brandy<br>
+	 3 coffee beans<br>
+	 1 tsp sugar<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Pour brandy with sugar and coffee beans 
+	 into an espresso cup. Heat the mixture 
+	 with the steam jet of the coffee machine 
+	 or a Bunsen burner. Ignite the heated.
+	 brandy. 
+	</p>
+	 Make fresh espresso in a pot and 
+	 pour onto the burning brandy.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page80" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 9 -->
+
+
+<div data-role="page" id="page80" data-add-back-btn="true"><!-- page 10 -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Tabasco Espresso</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/80.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	500 ml whipping cream<br>
+	80 ml chocolate syrup<br>
+	10 ml chocolate sauce<br>
+	1 drop of tabasco<br>
+	45 ml espresso<br>
+	some chocolate powder<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p>Put the whipping cream and chocolate syrup into the whipped cream maker.
+Tightly close the whipped cream maker, shake it and insert the cartridge.
+Vigorously shake the whipped cream maker 8-10 times.</p>
+
+Add the chocolate sauce to the espresso cup until the base of the cup is well covered.
+Drizzle a drop of tabasco over the chocolate.
+<p>
+Place the espresso cup under the coffee spout.</p>
+Prepare an espresso with 45 ml of water.
+<p>
+Use the whipped cream maker to add the chocolate cream topping to the espresso.</p>
+Serving suggestion:<br>
+
+Decorate the chocolate cream with a little chocolate powder.
+If you like, decorate with a chilli pepper.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page81" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 10 -->
+
+
+<div data-role="page" id="page81" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Viennese Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/81.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	100 ml coffee<br>
+	1 scoop vanilla ice cream<br>
+	Vanilla flavoured syrup to taste<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Add a little vanilla flavoured syrup to a tapered glass.
+<p>
+Shape a round scoop of vanilla ice cream and add it to the glass.</p>
+Place the glass under the coffee spout. Let the coffee flow directly down the edge into the glass.<br>
+Serving suggestion:<br>
+
+Garnish the Viennese coffee with grated chocolate as desired.
+It can also be served with a short straw.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page82" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page82" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Water Melon Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/82.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	45 ml Espresso<br>
+	2 cl water melon syrup<br>
+	Lemonade<br>
+	Ice cubes<br>
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Take a long drink glass.
+<p>Fill to just under the brim with ice cubes.</p>
+Add 2 cl of Bols Melon followed by fizzy lemonade until the glass is two thirds full.
+Add two straws to the glass.
+<p>
+In a separate receptacle, prepare an espresso with 45 ml of water.
+Pour the hot, freshly prepared espresso into the glass over an ice cube. Be careful not to mix the espresso with the other liquid. This creates an attractive layered effect in the glass.
+</p>
+
+Stir the coffee speciality well before serving.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page83" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page83" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>White Rum Coffee</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/83.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 ristretto <br>
+	1 tsp cane sugar<br>
+	1 cl white rum<br>
+	1 tbsp whipped cream<br>
+	Pistachio nuts, chopped, to decorate
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	Pour cane sugar and rum into a small glass.
+<p>Carefully pour the freshly prepared ristretto over the rum so that layers form.
+Top with the whipped cream.</p>
+Serving suggestion:<br>
+
+Decorate with chopped pistachios.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page84" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page84" data-add-back-btn="true"><!-- page -->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>Wine Coffee Drink</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/84.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	1 cup cold coffee<br>
+	2 oz Muscatel wine<br>
+	2 tsp sugar<br>
+	1/2 tsp grated orange peel<br>
+	Pinch of cinnamon
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	<p> Whip all ingredients until foamy and 
+	 smooth. 
+	</p>
+	 Serve in chilled glasses 
+	 over ice.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#menu" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page85"><!-- page 1-->
+
+	<div data-role="header" data-theme="a" data-position="inline">
+		<h1>Coffee Drink</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+	<p><strong>ADVOCAAT ESPRESSO</strong></p>
+	<div class="ui-grid-a" id="1">
+	<div class="ui-block-a"><img src="images/1.jpg" width="75%" height="40%"></div>
+	<div class="ui-block-b">
+	<strong>Ingredients:</strong><br><br>
+
+	 3 cl advocaat<br>
+	 1 cl sweetened condensed milk<br>
+	 1 cl Grappa<br>
+	 25 ml Espresso<br>
+	 20 ml milk foam<br> 
+</div>
+	</div><!-- /grid-a -->
+	<div class="ui-grid-solo">
+	<div class="ui-block-a"><p><strong>Directions:</strong></p>
+	 Pour first the sweetened condesed milk
+	 in a glas. Add the advocaat than slowly
+	 over a spoon the fresh Espresso. 
+	 <br>
+	 Pour the Grappa into it and serve with milk
+	 foam on top.
+	</div><!-- /grid-solo -->
+</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
+<ul>
+<li><a href="#menu" data-transition="slide" id="coffee" data-icon="custom" data-theme="a">Menu</a></li>
+<li><a href="#history" id="history" data-icon="custom" data-theme="a">History</a></li>
+<li><a href="#tips" id="tips" data-icon="custom" data-theme="a">Tips</a></li>
+<li><a href="#page1" id="stuff" data-icon="custom" data-theme="a">Next</a></li>
+</ul>
+		</div>
+	
+	</div>
+</div><!-- /page 84 END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>

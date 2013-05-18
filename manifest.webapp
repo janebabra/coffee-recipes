@@ -1,0 +1,20 @@
+{
+  "name": "Coffee Recipes",
+  "description": "Coffee Recipes for Cocktails and Drinks",
+  "launch_path": "/",
+  "icons": {
+    "256": "/icon-256.jpg"
+    "128": "/icon-128.jpg"
+    "64": "/icon-64.jpg"
+    "48": "/icon-48.jpg"
+    "32": "/icon-32.jpg"
+
+  },
+  "developer": {
+    "name": "greendog",
+    "url": "http://greendogdevelop.com"
+  },
+  "default_locale": "en"
+  "appcache_path": "/cache.manifest"
+  "orientation": [portrait"]
+}
