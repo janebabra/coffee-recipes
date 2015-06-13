@@ -1,0 +1,14 @@
+{
+  "name": "My Coffee App",
+  "icons": [
+      {
+      "src": "launcher-icon-2x.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "density": "2.0"
+    },
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
